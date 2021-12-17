@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-bold;
+  }
+}
+html, body, #svelte, .background {
+    min-height: 100vh;
+    font-family: 'Roboto' !important
+}
+
+.background {
+    background: url('images/background.jpeg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.trek-badge{
+    font-family: 'Rubik Mono One'
+}
+
+.nav-item{
+    @apply text-primary font-bold 
+}
+
+input {
+    @apply focus:outline-none p-1 text-white
+}
+
+.login-banner {
+    margin-top: 10%;
+}
