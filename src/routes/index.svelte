@@ -1,4 +1,5 @@
 <script lang="ts">
+import Landing from '../components/landing.svelte';
 interface User {
   firstName: string
   lastName: string
@@ -7,3 +8,4 @@ interface User {
 
 const user = {firstName: 'Charles', lastName: 'Xavier', role: 'Professor' }
 </script>
+<Landing/>
