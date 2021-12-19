@@ -1,14 +1,15 @@
-<script lang="ts">
-	import '../app.css';
-	const loggedIn = false;
+<script lang="ts" context="module">
+import '../app.css';
+import { pageBackground, setBackground } from "../stores/globalstore";
+const loggedIn = false;
 </script>
 
-<div class="background">
-	<nav class="h-full mb-5 flex flex-row justify-between items-center pl-5">
+<div class="background" style={`background: url('${$pageBackground}') no-repeat center center fixed; background-size: cover`}>
+	<nav class="mb-5 flex flex-row justify-between items-center pl-5">
 		<a href="/"> <div class="trek-badge p-5 bg-accent text-primary rounded-b-md ml-5">Trek</div></a>
 		<div
-			class="text-left border-accent border-b-2 hidden lg:flex md:flex flex-row justify-between items-center">
-			<div class="cursor-pointer nav-item mr-8">Parks</div>
+			class="p-2 rounded-tl-md rounded-bl-md text-left bg-primaryt hidden lg:flex md:flex flex-row justify-between items-center">
+			<a class="cursor-pointer nav-item mr-8" href="/parks">Parks</a>
 			<div class="cursor-pointer nav-item mr-8">Campsites</div>
 			<div class="cursor-pointer nav-item mr-8">Login</div>
 			{#if loggedIn}

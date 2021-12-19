@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="mt-5 flex flex-col h-full justify-center">
+<div class="mt-40 flex flex-col justify-center">
     <div class="py-24 px-5 login-banner flex flex-row flex-wrap justify-between bg-secondaryt">
         <div class="max-w-md flex flex-col text-white p-5">
             <h1 class="text-white text-4xl mb-5">Find Your Trail.</h1>

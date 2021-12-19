@@ -8,12 +8,16 @@
   }
 }
 html, body, #svelte, .background {
-    min-height: 100vh;
-    font-family: 'Roboto' !important
+    height: 100%;
+    font-family: 'Roboto' !important;
+    margin: 0;
+    padding: 0;
 }
+* {
+    box-sizing: border-box;
+  }
 
 .background {
-    background: url('images/background.jpeg') no-repeat center center fixed;
     background-size: cover; 
 }
 
@@ -22,7 +26,7 @@ html, body, #svelte, .background {
 }
 
 .nav-item{
-    @apply text-primary font-bold 
+    @apply font-bold text-white
 }
 
 input {
@@ -30,5 +34,5 @@ input {
 }
 
 .login-banner {
-    margin-top: 10%;
+    margin-top: 1%;
 }
