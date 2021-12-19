@@ -1,4 +1,4 @@
-<div class="flex flex-col">
+<div class="h-full flex flex-col">
     <div class="mt-20 flex lg:flex-row flex-col justify-center p-5">
         <h1 class="text-2xl m-0 mb-5 pb-8 lg:w-64 text-white h-5 border-b-accent border-b-2">Parks</h1>
         <div class="lg:w-1/2 h-80 lg:flex-row flex flex-row justify-start">

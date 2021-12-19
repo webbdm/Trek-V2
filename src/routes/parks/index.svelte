@@ -3,7 +3,7 @@ import { parks } from "../../stores/parkstore";
 import { setBackground} from "../../stores/globalstore";
 setBackground("images/background.jpeg");
 </script>
-<div>
+<div class="h-full">
 {#each $parks || [] as park }
     <a href={`/parks/${park.id}`}><div>{park.parkName}</div></a>
 {/each}
